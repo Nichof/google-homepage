@@ -1,0 +1,254 @@
+/* CSS for Google Homepage Project */
+
+/* Reset */
+
+body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    color:black;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    /* border: 1px solid black; */
+    margin: 0;
+    padding: 0;
+}
+
+/* Link Styles */
+
+a:link {
+    color: #000;
+
+    opacity: 0.75;
+    text-decoration:none;
+}
+
+a:link:hover {
+    text-decoration:underline;
+}
+
+/* Header Styles */
+
+header {
+    margin-top: .6875rem;
+    height: 1.875rem;
+    font-size: small;
+}
+
+    header nav {
+        list-style-type: none;
+    }
+
+        header nav li {
+            display: inline-block;
+            height: 1.875rem;
+            line-height: 1.875rem;
+
+            margin-left: 1.6875rem;
+        }
+        
+        .header__nav-right__google-apps-icon {
+            width: 1.875rem;
+            height: 1.875rem; 
+            display: inline-block;
+
+            background: url('//ssl.gstatic.com/gb/images/i1_1967ca6a.png') -132px -38px;
+            -webkit-background-size: 528px 68px;
+            background-size: 528px 68px;
+        }
+
+    .header__nav-left {
+        float: left;
+    }
+
+    .header__nav-right {
+        float: right;
+        
+        padding-right: 1.6875rem;
+    }
+
+        .header__nav-right li {
+            position: relative;
+            bottom: .625rem;
+        }
+        header nav li.google-apps-icon_s-li {
+            position: static;
+        }
+        
+        .header__nav-right__google-apps-icon {
+            width: 1.875rem;
+            height: 1.875rem; 
+            display: inline-block;
+
+            background: url('//ssl.gstatic.com/gb/images/i1_1967ca6a.png') -132px -38px;
+            -webkit-background-size: 528px 68px;
+            background-size: 528px 68px;
+        }
+
+        .header__nav-right__google-apps-icon:hover {
+            opacity: 50%;
+            cursor: pointer;
+        }
+
+        header .header__nav-right li:last-child {
+            color: #fff;
+            cursor: default;
+            text-decoration: none;
+            font-weight: bold;
+            outline: none;
+            background: #4285f4;
+            background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+            background: linear-gradient(top,#4387fd,#4683ea);
+            display: inline-block;
+            line-height: 28px;
+            padding: 0 12px;
+            -webkit-border-radius: 2px;
+            border-radius: 2px;
+            border: 1px solid #4285f4;
+        }
+
+        header .header__nav-right li:last-child:active {
+            color: #fff;
+            cursor: default;
+            text-decoration: none;
+   
+
+            -webkit-box-shadow: inset 0 2px 0 rgba(0,0,0,.15);
+            box-shadow: inset 0 2px 0 rgba(0,0,0,.15);
+            background: #3c78dc;
+            background: -webkit-linear-gradient(top,#3c7ae4,#3f76d3)   
+
+        }
+
+
+
+        
+
+    /* Main Styles */
+main {
+    text-align: center;
+}
+
+    main .main__logo-container {
+        text-align: center;
+        padding-top: 6.25rem;
+        padding-bottom: 1.25rem;
+    }
+
+    main .main__search-box {
+        width: 30.125rem;
+        height: 2.75rem;
+        border-radius: 1.5625rem;
+        border: 1px solid #dfe1e5;
+        margin-bottom: .625rem;
+        
+        display: inline-block;
+
+    }
+
+    main .main__search-box:hover {
+        box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+    }
+
+        main .main__search-box__magnifier {
+            position: relative;
+            top: .375rem;
+            color:#9aa0a6;
+            fill: currentColor;
+        }
+
+        main .main__search-box__input-field {
+            outline: none; 
+            box-shadow: none;
+            border:none;
+            
+            position: relative; 
+            top: .1255rem;
+            width: 24.1875rem;
+            height: 2rem;
+            font-size: 1rem;
+        }
+
+        main .main__search-box__input-field:focus {
+            outline: none; 
+            box-shadow: none; 
+            border:none;
+        }
+
+        main .main__search-box__microphone {
+            position: relative;
+            top: .5625rem;
+    }
+
+    main button {
+        background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+        background-color: #f2f2f2;
+        border: 1px solid #f2f2f2;
+        border-radius: 4px;
+        color: #5F6368;
+        font-family: arial,sans-serif;
+        font-size: 14px;
+        margin: 11px 4px;
+        padding: 0 16px;
+        line-height: 27px;
+        height: 36px;
+        min-width: 54px;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+    }
+    main button:hover {
+        box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+        background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+        background-color: #f8f8f8;
+        border: 1px solid #c6c6c6;
+        color: #222;
+        }      
+        
+    main button:focus {
+        border: 1px solid #4d90fe;
+        outline: none;
+        } 
+
+    /* Footer Styles */
+
+footer {
+    background: #f2f2f2;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    width: 100vw;
+    border-top: 1px solid #e4e4e4;
+    
+    font-size: .875rem;
+
+    position: fixed;
+    bottom: 0;
+}
+
+    footer nav{
+        display: flex;
+        justify-content: space-between;
+
+
+        
+    }
+
+        footer nav li {
+            display: inline-block;
+            height: 1.875rem;
+            line-height: 1.875rem;
+
+            margin-left:1.6875rem;
+        }
+
+        footer .footer__nav-right {
+            
+            padding-right:1.6875rem
+        }
+
+    
